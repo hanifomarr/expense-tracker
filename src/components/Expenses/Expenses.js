@@ -8,6 +8,7 @@ function Expenses({ items }) {
     <Card className="expenses">
       {items.map((item) => (
         <ExpenseItem
+          key={item.id}
           expenseTitle={item.title}
           expenseAmount={item.amount}
           date={item.date}

@@ -1,4 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+import Card from "./components/UI/Card";
 
 const App = () => {
   const expenses = [
@@ -22,7 +24,12 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
-  return <Expenses items={expenses} />;
+  return (
+    <div>
+      <NewExpense />
+      <Expenses items={expenses} />;
+    </div>
+  );
 };
 
 export default App;

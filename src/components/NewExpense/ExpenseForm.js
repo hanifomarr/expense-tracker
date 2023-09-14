@@ -44,7 +44,7 @@ function ExpenseForm({ onSubmitExpenseData }) {
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      date: eneteredDate,
+      date: new Date(eneteredDate),
     };
 
     console.log(expenseData);
